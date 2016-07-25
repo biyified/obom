@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         },
         watch: {
             scripts: {
-                files: ['scss/*.scss' , '*/*.hbs' ],
+                files: ['scss/*.scss' , '*/*.hbs', '*/*.js' ],
                 tasks: ['sass', 'assemble'],
                 options: {
                     reload: true
