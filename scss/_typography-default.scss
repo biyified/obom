@@ -1,27 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
 
-$font-family-basic: 'Roboto', Arial,sans-serif;
-$font-family-alternate: 'Roboto Slab', Arial,sans-serif;
+$font-family-basic: 'Roboto', Arial, sans-serif;
+$font-family-alternate: 'Roboto Slab', Arial, sans-serif;
 $font-size-default: 16px;
 
 //mixin
 @mixin ems($px) {
-  font-size : ((1px / $font-size-default ) * $px ) * 1em ;
+  font-size: ((1px / $font-size-default ) * $px ) * 1em;
 }
 
-
-@mixin font-size(){
+@mixin font-size() {
   @for $i from 1 through 200 {
     .fs-#{$i} {
-      font-size: (( 1px / $font-size-default ) * $i ) * 1em ;
+      font-size: (( 1px / $font-size-default ) * $i ) * 1em;
     }
   }
 }
-@mixin line-height(){
+
+@mixin line-height() {
   @for $i from 1 through 200 {
     .lh-#{$i} {
-      line-height: (( 1px / $font-size-default ) * $i ) * 1em ;
+      line-height: (( 1px / $font-size-default ) * $i ) * 1em;
     }
   }
 }
@@ -36,69 +36,76 @@ body {
     font-family: $font-family-basic;
   }
 
-  h1{
+  h1 {
     @include ems(114);
     font-weight: 100;
   }
-  h2{
+  h2 {
     @include ems(80);
     font-weight: bold !important;
   }
-  h3{
+  h3 {
     @include ems(36);
     font-weight: 100;
     font-family: $font-family-alternate;
   }
-  h4{
+  h4 {
     @include ems(30);
   }
-  h5{
+  h5 {
     @include ems(20);
   }
-  h6{
-    @include ems(20);
+  h6 {
+    @include ems(18);
     font-family: $font-family-alternate;
     font-weight: 100;
   }
-  p{
+  p {
     @include ems(18);
     font-weight: 300 !important;
   }
-  small{
+  small {
     @include ems(14);
     font-weight: 300 !important;
   }
 }
 
 //classes
-.font-weight-light{
+.font-weight-light {
   font-weight: 300;
 }
-.font-weight-normal{
+
+.font-weight-normal {
   font-weight: 400;
 }
-.font-weight-semi-bold{
+
+.font-weight-semi-bold {
   font-weight: 500;
 }
-.font-weight-bold{
+
+.font-weight-bold {
   font-weight: bold;
 }
-.text-align-left{
+
+.text-align-left {
   text-align: left;
 }
-.text-align-right{
+
+.text-align-right {
   text-align: right;
 }
-.text-align-center{
+
+.text-align-center {
   text-align: center;
 }
-.font-family-alternate{
-   font-family: $font-family-alternate;
- }
-.font-family-alternate{
-  font-family: $font-family-basic;
+
+.font-family-alternate {
+  font-family: $font-family-alternate;
 }
 
+.font-family-alternate {
+  font-family: $font-family-basic;
+}
 
 @include line-height();
 

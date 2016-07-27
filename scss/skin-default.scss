@@ -1,0 +1,73 @@
+
+$color-white : #FFFFFF;
+$color-black : #000000;
+$color-theme-main : #FF4C23;
+$color-text-dark : #303030;
+$color-theme-alt : #303440;
+$color-text-main : #5B5B5B;
+$color-text-alt : #303030;
+$color-text-alt-2 : #D4D4D4;
+$color-bg: #FFF;
+
+body{
+  background: $color-bg ;
+  color: $color-text-main ;
+  h1{
+    color: $color-theme-main;
+  }
+  h2{
+    color: $color-text-dark;
+  }
+  h3{
+    color: $color-text-dark;
+  }
+  h4{
+    color: $color-text-dark;
+  }
+  h5{
+    color: $color-text-main;
+  }
+  h6{
+    color: $color-theme-main;
+  }
+  p, small{
+    color: $color-text-main;
+  }
+}
+
+//Backgorund classes
+.color-bg-white{
+  background: $color-white;
+}
+.color-bg-black{
+  background: $color-black;
+}
+.color-bg-theme-dark{
+  background: $color-theme-alt;
+}
+
+.color-text-white{
+  color: $color-white;
+}
+.color-text-black{
+  color: $color-black;
+}
+.color-text-alt{
+  color: $color-text-alt;
+}
+.color-text-alt-2{
+  color: $color-text-alt;
+}
+.color-text-default{
+  color: $color-text-main;
+}
+.color-text-dark{
+  color: $color-text-dark;
+}
+.color-text-theme-main{
+  color: $color-theme-main;
+}
+.color-text-theme-alt{
+  color: $color-theme-alt;
+}
+
