@@ -1,0 +1,69 @@
+body {
+  background: #FFF;
+  color: #5B5B5B;
+}
+body h1 {
+  color: #FF4C23;
+}
+body h2 {
+  color: #303030;
+}
+body h3 {
+  color: #303030;
+}
+body h4 {
+  color: #303030;
+}
+body h5 {
+  color: #5B5B5B;
+}
+body h6 {
+  color: #FF4C23;
+}
+body p, body small {
+  color: #5B5B5B;
+}
+
+.color-bg-white {
+  background: #FFFFFF;
+}
+
+.color-bg-black {
+  background: #000000;
+}
+
+.color-bg-theme-dark {
+  background: #303440;
+}
+
+.color-text-white {
+  color: #FFFFFF;
+}
+
+.color-text-black {
+  color: #000000;
+}
+
+.color-text-alt {
+  color: #303030;
+}
+
+.color-text-alt-2 {
+  color: #303030;
+}
+
+.color-text-default {
+  color: #5B5B5B;
+}
+
+.color-text-dark {
+  color: #303030;
+}
+
+.color-text-theme-main {
+  color: #FF4C23;
+}
+
+.color-text-theme-alt {
+  color: #303440;
+}
