@@ -1,17 +1,9 @@
-
-$color-white : #FFFFFF;
-$color-black : #000000;
-$color-theme-main : #FF4C23;
-$color-text-dark : #303030;
-$color-theme-alt : #303440;
-$color-text-main : #5B5B5B;
-$color-text-alt : #303030;
-$color-text-alt-2 : #D4D4D4;
-$color-bg: #FFF;
+@import "variables";
 
 body{
   background: $color-bg ;
   color: $color-text-main ;
+
   h1{
     color: $color-theme-main;
   }
@@ -33,9 +25,15 @@ body{
   p, small{
     color: $color-text-main;
   }
+  a{
+    color: $color-text-alt;
+  }
+  a:hover{
+    color: $color-text-main;
+  }
 }
 
-//Backgorund classes
+//Background classes
 .color-bg-white{
   background: $color-white;
 }
