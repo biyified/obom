@@ -1,36 +1,18 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
 
-$font-family-basic: 'Roboto', Arial, sans-serif;
-$font-family-alternate: 'Roboto Slab', Arial, sans-serif;
-$font-size-default: 16px;
+@import "variables";
+@import "mixin";
 
-//mixin
-@mixin ems($px) {
-  font-size: ((1px / $font-size-default ) * $px ) * 1em;
-}
 
-@mixin font-size() {
-  @for $i from 1 through 200 {
-    .fs-#{$i} {
-      font-size: (( 1px / $font-size-default ) * $i ) * 1em;
-    }
-  }
-}
 
-@mixin line-height() {
-  @for $i from 1 through 200 {
-    .lh-#{$i} {
-      line-height: (( 1px / $font-size-default ) * $i ) * 1em;
-    }
-  }
-}
+
 
 //typography default style
 body {
-
   font-size: $font-size-default;
   font-family: $font-family-basic;
+  font-weight: 300 !important;
 
   h1, h2, p, {
     font-family: $font-family-basic;
@@ -39,6 +21,7 @@ body {
   h1 {
     @include ems(114);
     font-weight: 100;
+    font-family: $font-family-alternate;
   }
   h2 {
     @include ems(80);
@@ -62,14 +45,14 @@ body {
   }
   p {
     @include ems(18);
-    font-weight: 300 !important;
+    font-weight: 200 !important;
   }
   small {
     @include ems(14);
-    font-weight: 300 !important;
+    font-weight: 100 !important;
   }
-}
 
+}
 //classes
 .font-weight-light {
   font-weight: 300;
@@ -108,5 +91,4 @@ body {
 }
 
 @include line-height();
-
 @include font-size();

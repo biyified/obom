@@ -1,4 +1,5 @@
 <html>
+<head>
     <title>Mobo - Single page HTML Template</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,23 @@
     <!-- Set Fav Icons-->
     <link rel="apple-touch-icon" href="../apple-touch-icon.png">
     <link rel="shortcut icon" href="../images/favicon.ico">
-<head>
+
     <link type="text/css"  href="../css/bootstrap.min.css" rel="stylesheet">
     <link  type="text/css"  href="../css/bootstrap-theme.min.css"  rel="stylesheet">
     <link type="text/css" href="../css/mobo-main.css" rel="stylesheet">
     <link type="text/css" href="../css/skin-default.css" rel="stylesheet">
+    <link type="text/css" href="../css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-    {{>body}}
+{{>header}}
+{{>body}}
+{{>footer}}
+
+
 </body>
 </html>
 
 <!--Scripts-->
-<script type="application/javascript" src="../js/jquery-3.1.0.min.js"></script>
+<script type="application/javascript" src="../js/jquery-1.12.4.min.js"></script>
 <script type="application/javascript" src="../js/mobo.js"></script>
 <script type="application/javascript" src="../js/bootstrap.min.js"></script>

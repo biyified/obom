@@ -1,0 +1,99 @@
+@import "variables";
+@import "mixin";
+
+.main-nav {
+  li {
+    height: 100%;
+
+    & > a {
+      text-shadow: none;
+      @include ems(15);
+      @include border-radius(20px);
+      padding-bottom: 5px;
+      padding-top: 5px;
+      margin-top: 10px;
+      color: $color-text-alt-2;
+
+      &:hover, .active {
+        background: none;
+        color: $color-theme-main;
+      }
+
+      &:active, &:focus {
+        background: $color-theme-main;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 90px;
+}
+
+.footer{
+  background: $color-theme-alt;
+  color: $color-text-footer;
+  text-align: center;
+  height: 456px;
+  font-weight: 100;
+  @include ems(14);
+  padding-top: 120px;
+
+  .logo{
+    margin-bottom: 20px;
+  }
+  .social{
+    margin-bottom: 20px;
+    border-bottom: 1px solid $color-text-footer;
+    font-size: f-ems(25);
+    padding-bottom: 20px;
+
+    a{
+      border-radius: 60px;
+      width: 60px;
+      height: 60px;
+      border: 1px solid $color-white;
+      display: inline-block;
+      text-align: center;
+      margin-left: 5px;
+      margin-right: 5px;
+      line-height: 60px;
+
+      i{
+        line-height: 60px;
+        font-size: 25px;
+
+      }
+      &:hover{
+        background: #fff;
+        color: $color-theme-alt;
+      }
+
+    }
+  }
+  a{
+    color: $color-white;
+    
+    &:hover{
+      color: #fff;
+    }
+  }
+}
+@media ($device-phone-tab) {
+
+  .footer{
+    .social{
+      a{
+        i{
+          font-size: f-ems(12);
+          line-height: 40px;
+        }
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

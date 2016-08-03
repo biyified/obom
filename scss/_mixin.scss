@@ -1,0 +1,32 @@
+//mixin
+@mixin ems($px) {
+  font-size: ((1px / $font-size-default ) * $px ) * 1em;
+}
+@function f-ems($px) {
+  @return ((1px / $font-size-default ) * $px ) * 1em;
+}
+
+@mixin font-size() {
+  @for $i from 1 through 200 {
+    .fs-#{$i} {
+      font-size: (( 1px / $font-size-default ) * $i ) * 1em;
+    }
+  }
+}
+
+@mixin line-height() {
+  @for $i from 1 through 200 {
+    .lh-#{$i} {
+      line-height: (( 1px / $font-size-default ) * $i ) * 1em;
+    }
+  }
+}
+@mixin border-radius($radius){
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+  -ms-border-radius : $radius;
+
+
+}

@@ -1,8 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
 body {
   font-size: 16px;
   font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300 !important;
 }
 body h1, body h2, body p {
   font-family: "Roboto", Arial, sans-serif;
@@ -10,6 +11,7 @@ body h1, body h2, body p {
 body h1 {
   font-size: 7.125em;
   font-weight: 100;
+  font-family: "Roboto Slab", Arial, sans-serif;
 }
 body h2 {
   font-size: 5em;
@@ -33,11 +35,11 @@ body h6 {
 }
 body p {
   font-size: 1.125em;
-  font-weight: 300 !important;
+  font-weight: 200 !important;
 }
 body small {
   font-size: 0.875em;
-  font-weight: 300 !important;
+  font-weight: 100 !important;
 }
 
 .font-weight-light {
@@ -1674,4 +1676,94 @@ body small {
 
 .fs-200 {
   font-size: 12.5em;
+}
+
+.container, .container-fluid {
+  max-width: 100%;
+}
+
+.main-nav li {
+  height: 100%;
+}
+.main-nav li > a {
+  text-shadow: none;
+  font-size: 0.9375em;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-top: 10px;
+  color: #747474;
+}
+.main-nav li > a:hover, .main-nav li > a .active {
+  background: none;
+  color: #FF4C23;
+}
+.main-nav li > a:active, .main-nav li > a:focus {
+  background: #FF4C23;
+  color: #FFFFFF;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 90px;
+}
+
+.footer {
+  background: #303440;
+  color: #ACACAC;
+  text-align: center;
+  height: 456px;
+  font-weight: 100;
+  font-size: 0.875em;
+  padding-top: 120px;
+}
+.footer .logo {
+  margin-bottom: 20px;
+}
+.footer .social {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ACACAC;
+  font-size: 1.5625em;
+  padding-bottom: 20px;
+}
+.footer .social a {
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #FFFFFF;
+  display: inline-block;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  line-height: 60px;
+}
+.footer .social a i {
+  line-height: 60px;
+  font-size: 25px;
+}
+.footer .social a:hover {
+  background: #fff;
+  color: #303440;
+}
+.footer a {
+  color: #FFFFFF;
+}
+.footer a:hover {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .footer .social a {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .social a i {
+    font-size: 0.75em;
+    line-height: 40px;
+  }
 }

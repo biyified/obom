@@ -1,0 +1,25 @@
+
+//typography
+$font-family-basic: 'Roboto', Arial, sans-serif;
+$font-family-alternate: 'Roboto Slab', Arial, sans-serif;
+$font-size-default: 16px;
+
+
+//color
+$color-white : #FFFFFF;
+$color-black : #000000;
+$color-theme-main : #FF4C23;
+$color-text-dark : #303030;
+$color-theme-alt : #303440;
+$color-text-main : #5B5B5B;
+$color-text-alt : #303030;
+$color-text-alt-2 : #747474;
+$color-text-footer : #ACACAC;
+$color-bg: #FFFFFF;
+
+
+//devices
+$device-phone-tab: 'max-width: 767px';
+$device-phone: 'max-width: 480px';
+$device-landscape-desktop: '(min-width: 768px) and (max-width: 979px)';
+$device-tab-desktop: '(min-width: 768px) and (max-width: 979px)';

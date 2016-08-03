@@ -1,5 +1,5 @@
 body {
-  background: #FFF;
+  background: #FFFFFF;
   color: #5B5B5B;
 }
 body h1 {
@@ -21,6 +21,12 @@ body h6 {
   color: #FF4C23;
 }
 body p, body small {
+  color: #5B5B5B;
+}
+body a {
+  color: #303030;
+}
+body a:hover {
   color: #5B5B5B;
 }
 
