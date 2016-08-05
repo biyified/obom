@@ -1,3 +1,25 @@
 .container, .container-fluid {
   max-width: 100%;
 }
+.box-layout{
+  .row{
+    max-width: 1180px !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.height100{
+  height: 100vh;
+}
+.align-v-center{
+  display: flex;
+  align-items: center;
+}
+.align-v-bottom{
+  display: flex;
+  align-items: flex-end;
+}
+.align-v-top{
+  display: flex;
+  align-items: flex-start;
+}
