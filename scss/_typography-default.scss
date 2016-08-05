@@ -50,6 +50,7 @@ body {
   small {
     @include ems(14);
     font-weight: 100 !important;
+    line-height: f-ems(28);
   }
 
 }
