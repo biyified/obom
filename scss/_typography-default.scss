@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:200,400,300,700);
 
 @import "variables";
 @import "mixin";
@@ -13,6 +13,7 @@ body {
   font-size: $font-size-default;
   font-family: $font-family-basic;
   font-weight: 300 !important;
+  line-height: $font-line-height;
 
   h1, h2, p, {
     font-family: $font-family-basic;
@@ -20,7 +21,7 @@ body {
 
   h1 {
     @include ems(114);
-    font-weight: 100;
+    font-weight: 300;
     font-family: $font-family-alternate;
   }
   h2 {
@@ -31,6 +32,8 @@ body {
     @include ems(36);
     font-weight: 100;
     font-family: $font-family-alternate;
+    line-height: f-ems(20);
+    margin-bottom: 20px;
   }
   h4 {
     @include ems(30);
@@ -45,8 +48,12 @@ body {
   }
   p {
     @include ems(18);
-    font-weight: 200 !important;
+    font-weight: 300 !important;
+    line-height: f-ems(28);
+    margin-bottom: 20px;
   }
+
+
   small {
     @include ems(14);
     font-weight: 100 !important;
@@ -93,3 +100,5 @@ body {
 
 @include line-height();
 @include font-size();
+
+

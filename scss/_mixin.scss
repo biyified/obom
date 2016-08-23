@@ -34,3 +34,21 @@
   -webkit-background-size: $val;
   -o-background-size: $val;
 }
+@mixin box-sizing($val) {
+  box-sizing: $val;
+  -moz-box-sizing: $val;
+  -webkit-box-sizing: $val;
+  -o-box-sizing: $val;
+}
+@mixin box-shadow($val) {
+  box-shadow: $val;
+  -moz-box-shadow: $val;
+  -webkit-box-shadow: $val;
+  -o-box-shadow: $val;
+}
+@mixin transform($val) {
+  transform: $val;
+  -moz-transform: $val;
+  -webkit-transform: $val;
+  -o-transform: $val;
+}

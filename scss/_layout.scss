@@ -8,8 +8,14 @@
     margin-left: auto;
   }
 }
-.height100{
-  height: 100vh;
+.full-screen-height{
+    overflow-y: visible;
+    @include box-sizing(border-box);
+   // padding-top:90px;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-top: 60px;
+  height: 895px;
 }
 .align-v-center{
   display: flex;
@@ -22,4 +28,13 @@
 .align-v-top{
   display: flex;
   align-items: flex-start;
+}
+
+@media ($device-phone-tab) {
+  .vertical-center, .reset-v-align{
+    @include transform(translateY(0) !important);
+  }
+  .full-screen-height{
+    height: auto !important;
+  }
 }
