@@ -1,16 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:200,400,300,700);
 body {
   font-size: 16px;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300 !important;
+  line-height: 16px;
 }
 body h1, body h2, body p {
   font-family: "Roboto", Arial, sans-serif;
 }
 body h1 {
   font-size: 7.125em;
-  font-weight: 100;
+  font-weight: 300;
   font-family: "Roboto Slab", Arial, sans-serif;
 }
 body h2 {
@@ -21,6 +22,8 @@ body h3 {
   font-size: 2.25em;
   font-weight: 100;
   font-family: "Roboto Slab", Arial, sans-serif;
+  line-height: 1.25em;
+  margin-bottom: 20px;
 }
 body h4 {
   font-size: 1.875em;
@@ -35,7 +38,9 @@ body h6 {
 }
 body p {
   font-size: 1.125em;
-  font-weight: 200 !important;
+  font-weight: 300 !important;
+  line-height: 1.75em;
+  margin-bottom: 20px;
 }
 body small {
   font-size: 0.875em;
@@ -1689,8 +1694,16 @@ body small {
   margin-left: auto;
 }
 
-.height100 {
-  height: 100vh;
+.full-screen-height {
+  overflow-y: visible;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-top: 60px;
+  height: 895px;
 }
 
 .align-v-center {
@@ -1708,6 +1721,18 @@ body small {
   align-items: flex-start;
 }
 
+@media (max-width: 767px) {
+  .vertical-center, .reset-v-align {
+    transform: translateY(0) !important;
+    -moz-transform: translateY(0) !important;
+    -webkit-transform: translateY(0) !important;
+    -o-transform: translateY(0) !important;
+  }
+
+  .full-screen-height {
+    height: auto !important;
+  }
+}
 .main-nav li {
   height: 100%;
 }
@@ -1798,13 +1823,21 @@ body small {
 }
 
 @media (max-width: 767px) {
+  .footer {
+    height: 260px;
+    padding-top: 60px;
+  }
+  .footer .logo img {
+    width: 90px;
+  }
   .footer .social a {
     width: 40px;
     height: 40px;
+    line-height: 35px !important;
   }
   .footer .social a i {
     font-size: 0.75em;
-    line-height: 40px;
+    line-height: 40px !important;
   }
 }
 .classic-home {
@@ -1816,7 +1849,7 @@ body small {
   background: -moz-linear-gradient(top, #ffffff 0%, #d8d8d8 100%);
   background: -webkit-linear-gradient(top, #ffffff 0%, #d8d8d8 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #d8d8d8 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8d8d8',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d8d8d8', GradientType=0);
 }
 .classic-home .hero-phone {
   height: 630px;
@@ -1847,6 +1880,55 @@ body small {
   margin-bottom: 20px;
 }
 
+.classic-about .stacked-screens {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 260px;
+  float: none;
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+.classic-about .stacked-screens .screen {
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 50px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 50px;
+  -o-box-shadow: rgba(0, 0, 0, 0.3) 0 0 50px;
+  top: 0;
+  max-width: 346px;
+}
+.classic-about .stacked-screens .screen2 {
+  transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
+  z-index: -1;
+}
+.classic-about .stacked-screens .screen1 {
+  transform: translate(-25%, -88%);
+  -moz-transform: translate(-25%, -88%);
+  -webkit-transform: translate(-25%, -88%);
+  -o-transform: translate(-25%, -88%);
+  z-index: 12;
+}
+.classic-about .bullet {
+  font-size: 1.125em;
+  font-weight: 100 !important;
+  font-family: "Roboto Slab", Arial, sans-serif;
+  margin-top: 20px;
+  padding: 0;
+}
+.classic-about .bullet li {
+  margin-bottom: 15px;
+  line-height: 1.75em;
+  font-weight: 100 !important;
+  list-style: none;
+  background: url("../images/bullet-style.png") no-repeat 0 10px;
+  background-size: 11px 11px;
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
 /*mobile phone style for the classic home*/
 @media (max-width: 767px) {
   body .classic-home {
@@ -1867,7 +1949,23 @@ body small {
     background-position: center top;
     height: 510px;
   }
+  body .classic-about {
+    font-size: 0.875em;
+  }
+  body .classic-about .about-caption {
+    margin-top: 100px;
+  }
+  body .classic-about ul {
+    margin-bottom: 40px;
+  }
+  body .classic-about ul li {
+    background-position: 10px 7px;
+  }
+  body .classic-about .stacked-screens {
+    float: right;
+  }
 }
+/*For small desktops and tabs*/
 @media (min-width: 768px) and (max-width: 1000px) {
   body .classic-home {
     padding-top: 20px;
@@ -1883,8 +1981,28 @@ body small {
     height: auto;
   }
 }
+@media (min-width: 768px) and (max-width: 1000px) {
+  .classic-about .about-caption {
+    margin-top: 120px;
+  }
+  .classic-about .stacked-screens {
+    margin-top: 50px;
+  }
+}
+/*For Most regular desktops*/
 @media (min-width: 1001px) and (max-width: 1130px) {
   body .classic-home {
     height: 630px;
+  }
+}
+@media (min-width: 1001px) {
+  .classic-about {
+    height: 800px;
+  }
+  .classic-about .about-caption {
+    margin-top: 220px;
+  }
+  .classic-about .stacked-screens {
+    margin-top: 150px;
   }
 }

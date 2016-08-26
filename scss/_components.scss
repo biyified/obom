@@ -88,7 +88,6 @@
         background: #fff;
         color: $color-theme-alt;
       }
-
     }
   }
   a{
@@ -102,14 +101,21 @@
 @media ($device-phone-tab) {
 
   .footer{
+    height: 260px;
+    padding-top: 60px;
+
+    .logo img{
+      width: 90px;
+    }
     .social{
       a{
         i{
           font-size: f-ems(12);
-          line-height: 40px;
+          line-height: 40px !important;
         }
         width: 40px;
         height: 40px;
+        line-height: 35px !important;
       }
     }
   }
