@@ -120,3 +120,34 @@
     }
   }
 }
+.mobo-icon {
+  color: $color-theme-main !important;
+  border: 2px solid $color-theme-main;
+  text-align: center;
+  height: 80px;
+  width: 80px;
+  @include border-radius(80px);
+  display: inline-block;
+  font-size: 36px;
+  line-height: 75px;
+  text-decoration: none;
+}
+.mobo-icon-btn{
+  color:  $color-text-main !important;
+  border: 2px solid $color-text-main;
+  text-align: center;
+  height: 70px;
+  width: 70px;
+  @include border-radius(70px);
+  display: inline-block;
+  font-size: 36px;
+  line-height: 75px;
+  text-decoration: none;
+}
+.mobo-icon-btn:hover{
+  text-decoration: none;
+  background: $color-theme-main;
+  border: 2px solid $color-theme-main;
+  color: $color-white !important;
+}
+
