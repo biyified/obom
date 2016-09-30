@@ -48,28 +48,23 @@ body {
   }
   p {
     @include ems(18);
-    font-weight: 300 !important;
+    font-weight: 100 !important;
     line-height: f-ems(28);
     margin-bottom: 20px;
   }
-
-
   small {
     @include ems(14);
     font-weight: 100 !important;
     line-height: f-ems(28);
   }
-
 }
 //classes
 .font-weight-light {
   font-weight: 300;
 }
-
 .font-weight-normal {
   font-weight: 400;
 }
-
 .font-weight-semi-bold {
   font-weight: 500;
 }
@@ -77,27 +72,21 @@ body {
 .font-weight-bold {
   font-weight: bold;
 }
-
 .text-align-left {
   text-align: left;
 }
-
 .text-align-right {
   text-align: right;
 }
-
 .text-align-center {
   text-align: center;
 }
-
 .font-family-alternate {
   font-family: $font-family-alternate;
 }
-
 .font-family-alternate {
   font-family: $font-family-basic;
 }
-
 @include line-height();
 @include font-size();
 
